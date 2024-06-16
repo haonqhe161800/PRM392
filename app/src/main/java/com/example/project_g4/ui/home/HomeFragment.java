@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,6 +30,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
+    ScrollView scrollView;
+    ProgressBar progressBar;
     // popular item
     RecyclerView popularRec, homeCatRec, recommendedRec;
     List<PopularModel> popularModelList;
@@ -49,6 +53,11 @@ public class HomeFragment extends Fragment {
         popularRec = root.findViewById(R.id.pop_rec);
         homeCatRec = root.findViewById(R.id.explore_rec);
         recommendedRec = root.findViewById(R.id.recommended_rec);
+        scrollView = root.findViewById(R.id.scroll_view);
+        progressBar = root.findViewById(R.id.progressbar);
+
+        progressBar.setVisibility(View.VISIBLE);
+        scrollView.setVisibility(View.GONE);
 
         // popular items
         popularRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
@@ -78,6 +87,11 @@ public class HomeFragment extends Fragment {
                         // Create a PopularModel object with extracted properties
                         PopularModel popularModel = new PopularModel(productName, rating, description, discount, type, imgUrl);
                         popularModelList.add(popularModel); // Add the model to the list
+
+                        progressBar.setVisibility(View.GONE);
+                        scrollView.setVisibility(View.VISIBLE);
+
+
                     }
                 }
                 popularAdapters.notifyDataSetChanged(); // Notify adapter of data change

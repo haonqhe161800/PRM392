@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"
-        package= "com.example.project_ecommerce"
 
-        />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        package="com.example.project_ecommerce" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_g4"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.ViewAllActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.RegistrantionActivity"
             android:exported="true" />
