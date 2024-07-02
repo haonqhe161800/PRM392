@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
     </array>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+    </array>
+</resources>
+>>>>>>> 49639c2e3ed44bb56f7b1b00c6463ca153cb1e60
