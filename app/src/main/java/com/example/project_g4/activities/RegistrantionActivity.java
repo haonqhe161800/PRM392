@@ -10,8 +10,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.example.project_g4.R;
 import com.example.project_g4.models.Usermodel;
@@ -98,8 +102,6 @@ public class RegistrantionActivity extends AppCompatActivity {
                         } else {
                             progressBar.setVisibility(View.GONE);
 
-                            Toast.makeText(RegistrantionActivity.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
-                            Toast.makeText(RegistrantionActivity.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
                             Toast.makeText(RegistrantionActivity.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
