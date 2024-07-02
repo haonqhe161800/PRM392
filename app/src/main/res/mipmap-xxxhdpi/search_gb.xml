@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -5,4 +6,13 @@
     <corners android:radius="30dp"/>
     <stroke android:color="#CDCCCC" android:width="1dp"/>
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#F4F3F3"/>
+    <corners android:radius="30dp"/>
+    <stroke android:color="#CDCCCC" android:width="1dp"/>
+
+>>>>>>> 49639c2e3ed44bb56f7b1b00c6463ca153cb1e60
 </shape>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:app="http://schemas.android.com/apk/res-auto"
         app:fontProviderAuthority="com.google.android.gms.fonts"
@@ -5,3 +6,12 @@
         app:fontProviderQuery="Aclonica"
         app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
 </font-family>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fontProviderAuthority="com.google.android.gms.fonts"
+        app:fontProviderPackage="com.google.android.gms"
+        app:fontProviderQuery="Aclonica"
+        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>
+>>>>>>> 49639c2e3ed44bb56f7b1b00c6463ca153cb1e60
