@@ -14,8 +14,8 @@
 
         <ImageView
 
-            android:id="@+id/cat_nav_img"
-            android:scaleType="centerInside"
+            android:id="@+id/view_img"
+            android:scaleType="centerCrop"
             android:src="@drawable/fruits"
             android:layout_width="150dp"
             android:layout_height="150dp"/>
@@ -26,7 +26,7 @@
             android:orientation="vertical">
             <TextView
                 android:fontFamily="@font/alice"
-                android:id="@+id/nav_cat_name"
+                android:id="@+id/view_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
@@ -38,7 +38,7 @@
 
             <TextView
                 android:fontFamily="@font/alice"
-                android:id="@+id/nav_cat_description"
+                android:id="@+id/view_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description"
@@ -59,6 +59,7 @@
                     android:layout_height="wrap_content"
                     android:text="Price: $"/>
                 <TextView
+                    android:id="@+id/view_price"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/alice"
@@ -78,7 +79,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/rec_rating"
+                android:id="@+id/view_rating"
                 android:text="5.0"
                 android:layout_weight="1"
                 android:layout_marginTop="3dp" />
@@ -91,7 +92,6 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                 android:layout_gravity="end"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"/>
 
         </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.project_g4.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.project_g4.R;
+import com.example.project_g4.activities.ViewAllActivity;
 import com.example.project_g4.models.HomeCategory;
 
 import java.util.List;
@@ -48,6 +50,18 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
         // Đặt tên danh mục
         holder.name.setText(categoryList.get(position).getName());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentPosition = holder.getAdapterPosition();
+                if (currentPosition != RecyclerView.NO_POSITION) {
+                    Intent intent = new Intent(context, ViewAllActivity.class);
+                    intent.putExtra("type", categoryList.get(currentPosition).getType());
+                    context.startActivity(intent);
+                }
+            }
+        });
     }
 
     // Phương thức này trả về hình ảnh lỗi dựa trên vị trí của mục danh mục
